@@ -7,7 +7,7 @@ ImageBoard is a web application that enables users to upload and view images in 
 ## Setting up the environment
 - In order to run the app you must define these env variables in the `.env` file (in the root service path similar to example shown below):
 ```
-DB_URL = mongodb://localhost:27017/InstaClone
+DB_URL = mongodb+srv://anida:anida@webp.zdv0r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 JWT_SECRET = 51778657246321226641fsdklafjasdkljfsklfjd7148924065
 REFRESH_TOKEN_EXPIRY_TIME_IN_DAYS = 10
 JWT_EXPIRATION_TIME = 15m
