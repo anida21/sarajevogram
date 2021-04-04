@@ -1,6 +1,6 @@
-# ImageBoardBE
 
-ImageBoard is a web application that enables users to upload and view images in the form of a post (similar to Instagram)
+
+Sarajevogram is a web application that enables users to upload and view images in the form of a post (similar to Instagram)
 
 ### Setup
 
