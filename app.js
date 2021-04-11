@@ -46,7 +46,6 @@ app.use("/api/posts", postsRoutes);
 
 module.exports = app;
 
-
-app.listen(process.env.PORT || 5000), function(){
+app.listen(process.env.PORT || 8080, () => {
   console.log("Server is listening on port 3000");
 });
