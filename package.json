@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
     "start:dev": "nodemon app.js",
-    "frontend": "npm start --prefix frontend"
+    "frontend": "npm start --prefix frontend",
+    "heroku-postbuild": "cd frontend && npm install"
+
 
 
   },
