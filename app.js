@@ -2,8 +2,15 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
-var distDir = "../dist/";
-app.use(express.static(distDir));
+const path = require('path')
+
+// Serve static files from the React frontend app
+app.use(express.static(path.join(__dirname, '/frontend/dist')))
+
+// AFTER defining routes: Anything that doesn't match what's above, send back index.html; (the beginning slash ('/') in the string is important!)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/frontend/dist/index.html'))
+})
 
 const { mongoose } = require("./db/mongoose");
 
@@ -13,7 +20,6 @@ const { Post } = require("./db/models/post.model");
 
 const usersRoutes = require("./routes/users");
 const postsRoutes = require("./routes/posts");
-const path = require("path");
 
 /* MIDDLEWARE  */
 
