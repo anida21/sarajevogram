@@ -49,7 +49,7 @@ module.exports = app;
 //app.listen(process.env.PORT || 3000, () => {
   //console.log("Server is listening on port 3000");
 //});
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>{
   console.log("Express server listening on port ", PORT);
 });
