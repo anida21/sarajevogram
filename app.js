@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
+var distDir = "../dist/";
+app.use(express.static(distDir));
 
 const { mongoose } = require("./db/mongoose");
 
