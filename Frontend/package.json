@@ -8,9 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:server": "node server.js",
-    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
-    },
+    "start:server": "node server.js"
+      },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.6",
