@@ -10,7 +10,7 @@
     "frontend": "cd frontend && npm start",
     "dev": "concurrently \"npm run start:dev\" \"npm run frontend\"",
 
-    "heroku-postbuild": "npm install && npm run dev"
+    "heroku-postbuild": "cd frontend npm install && npm run dev"
 
 
 
